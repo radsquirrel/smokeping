@@ -11,7 +11,7 @@ fi
 
 cat > /usr/bin/smokeping_prober <<EOF
 #!/bin/sh
-exec /usr/lib/smokeping_prober/smokeping_prober ${HOSTS}
+exec /usr/lib/smokeping_prober/smokeping_prober ${ARGS:-} ${HOSTS}
 EOF
 chmod 755 /usr/bin/smokeping_prober
 
