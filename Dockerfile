@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-ENV SMOKEPING_PROBER_VERSION 0.7.0
+ENV SMOKEPING_PROBER_VERSION 0.7.1
 RUN mkdir /build
 RUN apk add --no-cache s6 \
   && wget https://github.com/SuperQ/smokeping_prober/releases/download/v${SMOKEPING_PROBER_VERSION}/smokeping_prober-${SMOKEPING_PROBER_VERSION}.linux-amd64.tar.gz \
