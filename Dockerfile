@@ -1,5 +1,4 @@
 FROM alpine:latest
-MAINTAINER Brad Bishop <bradleyb@fuzziesquirrel.com>
 
 ENV SMOKEPING_PROBER_VERSION 0.7.0
 RUN mkdir /build
